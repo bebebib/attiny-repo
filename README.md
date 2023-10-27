@@ -1,3 +1,25 @@
+# AT Tiny Exploration Project
+Messing with drivers and peripherals of the attiny85
+
+## Build
+To get the toolchain to work on this repo, you need to install the Arduino IDE and add the following to your path:
+- C:\Program Files (x86)\Arduino\hardware\tools\avr\bin
+- C:\Program Files (x86)\Arduino\hardware\tools\avr\etc
+OS equivalent also applies
+
+```
+> cmake -DCMAKE_BUILD_TYPE:STRING=Debug -Bbuild -G Ninja
+> cd build
+> ninja
+```
+
+## Load / Debug
+Installation of avr-dude required: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers
+Download the AVR 8 bit toolchain for windows (or your OS). Extract the zip somewhere and add the following to your PATH variable (path here may differ depending on where you download it.)
+- C:\dev\avr8-gnu-toolchain-win32_x86_64\bin
+Note that this also downloads some avr build tools
+
+# Old Notes
 https://www.amazon.com/gp/product/B0836WXQQR/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&th=1
 AiTrip 5pcs Digispark Kickstarter Attiny85 General Micro USB Development Board for Arduino ^^^^
 -	Drivers for dev board
@@ -26,13 +48,6 @@ C:\Program Files (x86)\Arduino\hardware\tools\avr\etc
 I have USBtinyISP !!!! How do I hook up to attiny85 ??
 https://shallowsky.com/blog/hardware/attiny85-c.html
  
-
-
-
-
-
-
-
 With USB board
 
  

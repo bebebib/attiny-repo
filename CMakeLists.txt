@@ -19,6 +19,9 @@ set(GENERAL_FLAGS "-Wall -g -Og -mmcu=attiny85")
 set(CMAKE_C_FLAGS "${GENERAL_FLAGS}")
 set(CMAKE_CXX_FLAGS "${GENERAL_FLAGS}")
 
+# TODO: use a linker -T ${CMAKE_SOURCE_DIR}/attiny85_link.ld 
+set(CMAKE_EXE_LINKER_FLAGS "-Xlinker --print-memory-usage -Xlinker -Map=main.map")
+
 add_definitions(-DF_CPU=1000000)
 
 # Our executable!

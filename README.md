@@ -12,6 +12,12 @@ Messing with drivers and peripherals of the attiny85
     - USB-A to USB-B cable
     - MCU jumper wires
 
+## TODO list
+- Create own linker script for this MCU
+    - https://gcc.gnu.org/wiki/avr-gcc
+- Create own initialization function for this MCU
+- Create own BSP for this MCU based on datasheet (no Arduino / AVR helper functions!)
+
 ## Build
 To get the toolchain to work on this repo, you need to install the Arduino IDE and add the following to your path:
 - C:\Program Files (x86)\Arduino\hardware\tools\avr\bin
